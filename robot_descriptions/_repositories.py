@@ -48,7 +48,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
-        commit="v1.2.0",
+        commit="6c4b0f375fe4e356a3b12df26ef7c0d5e58df86e",  # v1.2.0
         cache_path="baxter_common",
     ),
     "berkeley_humanoid_description": Repository(
@@ -111,7 +111,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "ergocub-software": Repository(
         url="https://github.com/icub-tech-iit/ergocub-software.git",
-        commit="ac3f223dc2f183dea3f819369da0d58b59f1b2d3",
+        commit="v0.7.7",
         cache_path="ergocub-software",
     ),
     "example-robot-data": Repository(
@@ -245,6 +245,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="0.1.5",
         cache_path="romeo_robot",
     ),
+    "ros2_kortex": Repository(
+        url="https://github.com/Kinovarobotics/ros2_kortex.git",
+        commit="fb633aacf9c1c85d61a96c1099b5afa3d533e5a3",
+        cache_path="ros2_kortex",
+    ),
     "rtmros_nextage": Repository(
         url="https://github.com/tork-a/rtmros_nextage.git",
         commit="ac270fb969fa54abeb6863f9b388a9e20c1f14e0",
@@ -277,7 +282,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
-        commit="v2.0.0",
+        commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
         cache_path="talos_data",  # match package name
     ),
     "unitree_mujoco": Repository(

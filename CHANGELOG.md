@@ -6,6 +6,17 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Description: Kinova Gen3 Lite (URDF)
+
+### Changed
+
+- Update `baxter_common` repository with a commit ID rather than a tag
+- Update `talos-data` repository with a commit ID rather than a tag
+
+## [1.16.0] - 2025-04-09
+
+### Added
+
 - Add tags attribute to Description class
 - Description: Ability Hand (MJCF)
 - Description: Ability Hand (URDF)
@@ -14,13 +25,16 @@ All notable changes to this project will be documented in this file.
 - Description: BXI Elf2 (URDF)
 - Example: Load all humanoid robot descriptions
 - Example: Load all quadruped robot descriptions
+- Example: Show any robot description in the Candlewick viewer
 - Export `DESCRIPTIONS` dictionary from top-level module
 
 ### Changed
 
 - CICD: Update checkout actions to v4
-- Update eDO description repository
 - Update MuJoCo Menagerie repository commit
+- Update eDO description repository
+- Update ergoCub description model to SN002 (thanks to @traversaro)
+- Update ergocub-software repository to v0.7.7 (thanks to @traversaro)
 - Update simple-humanoid-description repository commit (thanks to @drfenixion)
 
 ## [1.15.0] - 2025-03-06
@@ -442,7 +456,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...HEAD
+[1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
 [1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.14.0...v1.15.0
 [1.14.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.13.0...v1.14.0
 [1.13.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.12.0...v1.13.0

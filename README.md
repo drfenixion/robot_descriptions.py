@@ -140,6 +140,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
 | `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_description`            | Gen3                  | Kinova                   | URDF       | MIT          |
+| `gen3_lite_description`       | Gen3 Lite             | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_mj_description`         | Gen3                  | Kinova                   | MJCF       | BSD-2-Clause |
 | `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
@@ -310,10 +311,10 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.15.0},
+  version = {1.16.0},
   year = {2025}
 }
 ```
