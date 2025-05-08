@@ -146,6 +146,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
 | `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
+| `low_cost_robot_arm_mj_description` | Low-cost robot arm | Alexander Koch | MJCF | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/ef4d04fbb7451d30b39c2aff7e49df737bb46815/low_cost_robot_arm/LICENSE) |
 | `panda_description`           | Panda                 | Franka Robotics          | URDF       | Apache-2.0   |
 | `panda_mj_description`        | Panda                 | Franka Robotics          | MJCF       | Apache-2.0   |
 | `piper_description`           | PiPER                 | AgileX                   | URDF       | MIT          |
@@ -226,6 +227,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                            | Robot                 | Maker                    | Format     | License |
 |---------------------------------|-----------------------|--------------------------|------------|---------|
 | `apollo_mj_description`         | Apollo                | Apptronik                | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/bf04290ac7911fa7a39339c7e507792fd464c438/apptronik_apollo/LICENSE) |
+| `adam_lite_mj_description`      | Adam Lite             | PNDBotics                | MJCF       | [MIT](https://github.com/google-deepmind/mujoco_menagerie/blob/4035f8e628b7e613d03ba7fdfc6fae3da2f30296/pndbotics_adam_lite/LICENSE) |
 | `atlas_drc_description`         | Atlas DRC (v3)        | Boston Dynamics          | URDF       | BSD-3-Clause |
 | `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | URDF       | MIT |
 | `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
@@ -315,10 +317,12 @@ If you use this project in your works, please cite as follows:
   author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.16.0},
+  version = {1.17.0},
   year = {2025}
 }
 ```
+
+Don't forget to add yourself to the BibTeX above and to `CITATION.cff` if you contribute to this repository.
 
 ## See also
 
