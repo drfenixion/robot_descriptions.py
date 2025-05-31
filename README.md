@@ -163,6 +163,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
+| `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
@@ -201,6 +202,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | DOF | Format     |
 |-------------------------------|-----------------------|-----|------------|
 | `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
+| `dynamixel_2r_mj_description` | Dynamixel 2R          | 2   | MJCF       |
 | `finger_edu_description`      | FingerEdu             | 3   | URDF       |
 | `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
 | `trifinger_edu_description`   | TriFingerEdu          | 9   | URDF       |

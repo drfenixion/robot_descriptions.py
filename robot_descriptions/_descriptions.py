@@ -95,6 +95,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "double_pendulum_description": Description(
         Format.URDF, tags={"educational"}
     ),
+    "dynamixel_2r_mj_description": Description(
+        Format.MJCF, tags={"educational"}
+    ),
     "draco3_description": Description(Format.URDF, tags={"humanoid"}),
     "edo_description": Description(Format.URDF, tags={"arm"}),
     "elf2_description": Description(Format.URDF, tags={"humanoid"}),
@@ -213,6 +216,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "viper_mj_description": Description(Format.MJCF, tags={"arm"}),
     "widow_mj_description": Description(Format.MJCF, tags={"arm"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF, tags={"arm"}),
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),
