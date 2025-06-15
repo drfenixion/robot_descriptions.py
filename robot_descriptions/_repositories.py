@@ -177,7 +177,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="4a7015530bd7a4161103ae8f0905a96481e4cc1a",
+        commit="f3475402a11acf5ba767a8bec03cc9bea9819d8d",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
@@ -304,5 +304,10 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/lvjonok/skydio_x2_description.git",
         commit="9a6a057a055babaf47119fac42c361fffc189128",
         cache_path="skydio_x2_description",
+    ),
+    "Wiki-GRx-Models": Repository(
+        url="https://github.com/FFTAI/Wiki-GRx-Models.git",
+        commit="f8e683f00d1d99deb882deb9dfce6030095b466a",
+        cache_path="Wiki-GRx-Models",
     ),
 }
