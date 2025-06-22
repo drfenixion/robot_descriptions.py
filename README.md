@@ -15,15 +15,11 @@ Importing a description for the first time automatically downloads and caches fi
 
 ### From conda-forge
 
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions)
-
 ```console
 conda install -c conda-forge robot_descriptions
 ```
 
 ### From PyPI
-
-[![PyPI version](https://img.shields.io/pypi/v/robot_descriptions)](https://pypi.org/project/robot_descriptions/)
 
 ```console
 pip install robot_descriptions
@@ -301,6 +297,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | Name                          | Robot                 | Maker                    | Format     | License |
 |-------------------------------|-----------------------|--------------------------|------------|---------|
 | `rsk_description`             | RSK Omnidirectional   | Robot Soccer Kit         | URDF       | MIT     |
+| `rsk_mj_description`          | RSK Omnidirectional   | Robot Soccer Kit         | MJCF       | MIT     |
 | `upkie_description`           | Upkie                 | Stéphane Caron           | URDF       | Apache-2.0 |
 
 ## Contributing
@@ -318,10 +315,10 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Castro, Sebastian},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.17.0},
+  version = {1.18.0},
   year = {2025}
 }
 ```

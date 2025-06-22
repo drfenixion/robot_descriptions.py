@@ -6,14 +6,22 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Add `pull` in the CLI to pull `robot_description` and cache it. (thanks to @haixuantao)
+
+## [1.18.0] - 2025-06-19
+
+### Added
+
 - Description: Dynamixel 2R (MJCF)
 - Description: Fourier N1 (MJCF)
 - Description: Fourier N1 (URDF)
+- Description: RSK omnidirectional robot (MJCF)
 - Description: YAM (MJCF) (thanks to @kevinzakka)
 
 ### Changed
 
 - Update `piper_mj_description` to load `piper.xml` instead of `scene.xml` (thanks to @jonzamora)
+- Allow passing `kwargs` to `yourdfpy.load_robot_description` (thanks to @sea-bass)
 
 ## [1.17.0] - 2025-05-08
 
@@ -472,7 +480,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...HEAD
+[1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...v1.18.0
 [1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...v1.17.0
 [1.16.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.15.0...v1.16.0
 [1.15.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.14.0...v1.15.0
