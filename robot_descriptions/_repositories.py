@@ -46,6 +46,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="6adc14720aab583613975e5a9d6d4fa3cfcdd081",
         cache_path="anymal_d_simple_description",
     ),
+    "bambot": Repository(
+        url="https://github.com/timqian/bambot.git",
+        commit="04d902653794f9f72eeabb09ec90a9af8e397c5b",
+        cache_path="bambot",
+    ),
     "baxter_common": Repository(
         url="https://github.com/RethinkRobotics/baxter_common.git",
         commit="6c4b0f375fe4e356a3b12df26ef7c0d5e58df86e",  # v1.2.0
@@ -267,7 +272,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "SO-ARM100": Repository(
         url="https://github.com/TheRobotStudio/SO-ARM100.git",
-        commit="8967344301571dfa22660c73a901ad00acd6ee91",
+        commit="63eede5a636e548eb8f2854e558bd343c21db9f7",
         cache_path="SO-ARM100",
     ),
     "spryped": Repository(
