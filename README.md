@@ -231,12 +231,15 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `atlas_drc_description`         | Atlas DRC (v3)        | Boston Dynamics          | URDF       | BSD-3-Clause |
 | `atlas_v4_description`          | Atlas v4              | Boston Dynamics          | URDF       | MIT |
 | `berkeley_humanoid_description` | Berkeley Humanoid     | Hybrid Robotics          | URDF       | BSD-3-Clause |
+| `booster_t1_description`        | Booster T1            | Booster Robotics         | URDF       | [Apache-2.0](https://github.com/BoosterRobotics/booster_gym/blob/687a33d08b08875fe45dc8d91b54db83766df8b9/LICENSE) |
+| `booster_t1_mj_description`     | Booster T1            | Booster Robotics         | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/66384c6b8581c811a7b1eb63bcf4fa944fa43602/booster_t1/LICENSE) |
 | `draco3_description`            | Draco3                | Apptronik                | URDF       | BSD-2-Clause |
 | `elf2_description`              | Elf2                  | BXI Robotics             | URDF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
 | `elf2_mj_description`           | Elf2                  | BXI Robotics             | MJCF       | [Apache-2.0](https://github.com/bxirobotics/robot_models/blob/eabe24ce937f8e633077a163b883e92e8996c36e/LICENSE) |
 | `ergocub_description`           | ergoCub               | IIT                      | URDF       | BSD-3-Clause |
 | `g1_description`                | G1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `g1_mj_description`             | G1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| `gr1_description`               | GR-1                  | Fourier                  | URDF       | [GPL-3.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/351245ac8fa4bf6f4b0c41556e1e6976a438bcef/LICENSE) |
 | `h1_description`                | H1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `h1_mj_description`             | H1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 | `icub_description`              | iCub                  | IIT                      | URDF       | CC-BY-SA-4.0 ✖️  |
@@ -302,6 +305,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `rsk_description`             | RSK Omnidirectional   | Robot Soccer Kit         | URDF       | MIT     |
 | `rsk_mj_description`          | RSK Omnidirectional   | Robot Soccer Kit         | MJCF       | MIT     |
 | `upkie_description`           | Upkie                 | Stéphane Caron           | URDF       | Apache-2.0 |
+| `wl_p311d_description`        | WL P311D              | LimX Dynamics            | URDF       | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE) |
+| `wl_p311e_description`        | WL P311E              | LimX Dynamics            | URDF       | [Apache-2.0](https://github.com/limxdynamics/robot-description/blob/a097533372a08298d45af391cbdfc2fd2dc3da6f/LICENSE) |
 
 ## Contributing
 
