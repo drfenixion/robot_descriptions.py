@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Unitree H1\_2 (URDF) (thanks to @TonyZYT2000)
+- Description: Unitree H1\_2 (MJCF) (thanks to @TonyZYT2000)
+
+## [1.20.0] - 2025-07-15
+
+### Added
+
+- Description: MuJoCo Humanoid (MJCF) (thanks to @ManifoldFR)
+- Description: RBY1 Mobile Manipulatior (URDF) (thanks to @uynitsuj)
+- Description: YAM (MJCF) (thanks to @uynitsuj)
+- Description: YAM (URDF) (thanks to @uynitsuj)
+
 ## [1.19.0] - 2025-07-03
 
 ### Added
@@ -495,7 +509,8 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.19.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.20.0...HEAD
+[1.20.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.19.0...v1.20.0
 [1.19.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...v1.19.0
 [1.18.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.17.0...v1.18.0
 [1.17.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.16.0...v1.17.0

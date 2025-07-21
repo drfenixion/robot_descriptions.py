@@ -131,6 +131,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "gr1_description": Description(Format.URDF, tags={"humanoid"}),
     "h1_description": Description(Format.URDF, tags={"humanoid"}),
     "h1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "h1_2_description": Description(Format.URDF, tags={"humanoid"}),
+    "h1_2_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "hyq_description": Description(Format.URDF, tags={"quadruped"}),
     "icub_description": Description(Format.URDF, tags={"humanoid"}),
     "iiwa7_description": Description(Format.URDF, tags={"arm"}),
@@ -151,6 +153,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "mini_cheetah_description": Description(Format.URDF, tags={"quadruped"}),
     "minitaur_description": Description(Format.URDF, tags={"quadruped"}),
+    "mujoco_humanoid_mj_description": Description(
+        Format.MJCF, tags={"educational", "humanoid"}
+    ),
     "n1_description": Description(Format.URDF, tags={"humanoid"}),
     "n1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
@@ -232,6 +237,8 @@ DESCRIPTIONS: Dict[str, Description] = {
     "wl_p311e_description": Description(Format.URDF, tags={"quadruped"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "yam_description": Description(Format.URDF, tags={"arm"}),
+    "rby1_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF, tags={"arm"}),
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),

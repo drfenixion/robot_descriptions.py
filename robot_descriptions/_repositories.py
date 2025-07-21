@@ -150,6 +150,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="ba9e7c8cdbd63e20fc6526dbbea1b91c102fb820",
         cache_path="halodi-robot-models",
     ),
+    "i2rt": Repository(
+        url="https://github.com/i2rt-robotics/i2rt.git",
+        commit="8a8f804d72b41a04a5c69520031aec9a5d328104",
+        cache_path="i2rt",
+    ),
     "icub-models": Repository(
         url="https://github.com/robotology/icub-models.git",
         commit="v1.25.0",
@@ -193,6 +198,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="1988bceb26e81f28594a16e7d5e6abe5cbb27ace",
         cache_path="mini_cheetah_urdf",
     ),
+    "mujoco": Repository(
+        url="https://github.com/google-deepmind/mujoco.git",
+        commit="ad0dc0de5e10a075a2c65be629e9a8d557d383a6",
+        cache_path="mujoco",
+    ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
         commit="66384c6b8581c811a7b1eb63bcf4fa944fa43602",
@@ -232,6 +242,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/poppy-project/poppy_torso_description.git",
         commit="6beeec3d76fb72b7548cce7c73aad722f8884522",
         cache_path="poppy_torso_description",
+    ),
+    "rby1_description": Repository(
+        url="https://github.com/uynitsuj/rby1_description.git",
+        commit="e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72",
+        cache_path="rby1_description",
     ),
     "reachy_description": Repository(
         url="https://github.com/aubrune/reachy_description.git",
@@ -310,7 +325,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "unitree_ros": Repository(
         url="https://github.com/unitreerobotics/unitree_ros.git",
-        commit="8bca7f8907bf6feceac80809ae67e4b379ab9cfc",
+        commit="267182b8521c8d6a631bab1fe63836873237a525",
         cache_path="unitree_ros",
     ),
     "upkie_description": Repository(

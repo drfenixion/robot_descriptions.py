@@ -161,7 +161,9 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
+| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
+| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
@@ -197,13 +199,14 @@ The DOF column denotes the number of actuated degrees of freedom.
 
 ### Educational
 
-| Name                          | Robot                 | DOF | Format     |
-|-------------------------------|-----------------------|-----|------------|
-| `double_pendulum_description` | Double Pendulum       | 2   | URDF       |
-| `dynamixel_2r_mj_description` | Dynamixel 2R          | 2   | MJCF       |
-| `finger_edu_description`      | FingerEdu             | 3   | URDF       |
-| `simple_humanoid_description` | Simple Humanoid       | 29  | URDF       |
-| `trifinger_edu_description`   | TriFingerEdu          | 9   | URDF       |
+| Name                             | Robot                 | DOF | Format     | License |
+|----------------------------------|-----------------------|-----|------------|---------
+| `double_pendulum_description`    | Double Pendulum       | 2   | URDF       | BSD-3-Clause |
+| `dynamixel_2r_mj_description`    | Dynamixel 2R          | 2   | MJCF       | MIT |
+| `finger_edu_description`         | FingerEdu             | 3   | URDF       | BSD-3-Clause |
+| `mujoco_humanoid_mj_description` | MuJoCo Humanoid       | 27  | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco/blob/ad0dc0de5e10a075a2c65be629e9a8d557d383a6/LICENSE) |
+| `simple_humanoid_description`    | Simple Humanoid       | 29  | URDF       | BSD-2-Clause |
+| `trifinger_edu_description`      | TriFingerEdu          | 9   | URDF       | MIT |
 
 ### End effectors
 
@@ -242,6 +245,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `gr1_description`               | GR-1                  | Fourier                  | URDF       | [GPL-3.0](https://github.com/FFTAI/Wiki-GRx-Models/blob/351245ac8fa4bf6f4b0c41556e1e6976a438bcef/LICENSE) |
 | `h1_description`                | H1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `h1_mj_description`             | H1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
+| `h1_2_description`              | H1_2                  | UNITREE Robotics         | URDF       | BSD-3-Clause |
+| `h1_2_mj_description`           | H1_2                  | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 | `icub_description`              | iCub                  | IIT                      | URDF       | CC-BY-SA-4.0 ✖️  |
 | `jaxon_description`             | JAXON                 | JSK                      | URDF       | CC-BY-SA-4.0 ✖️  |
 | `jvrc_description`              | JVRC-1                | AIST                     | URDF       | BSD-2-Clause |
@@ -266,11 +271,14 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `ginger_description`          | Ginger                | Paaila Technology        | URDF       | BSD |
 | `pepper_description`          | Pepper                | SoftBank Robotics        | URDF       | BSD-2-Clause |
 | `pr2_description`             | PR2                   | Willow Garage            | URDF       | BSD |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | URDF       | [MIT](https://github.com/uynitsuj/rby1_description/blob/e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72/LICENSE) |
 | `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
 | `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
+
 
 ### Quadrupeds
 
@@ -323,10 +331,10 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Castro, Sebastian and Tao, Haixuan Xavier},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Castro, Sebastian and Tao, Haixuan Xavier and Jallet, Wilson},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.19.0},
+  version = {1.20.0},
   year = {2025}
 }
 ```
