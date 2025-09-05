@@ -152,7 +152,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "i2rt": Repository(
         url="https://github.com/i2rt-robotics/i2rt.git",
-        commit="8a8f804d72b41a04a5c69520031aec9a5d328104",
+        commit="7809b5b17227162d265f922e2e10598c0e214322",
         cache_path="i2rt",
     ),
     "icub-models": Repository(
@@ -205,7 +205,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="66384c6b8581c811a7b1eb63bcf4fa944fa43602",
+        commit="c1503a62496b64222c64ff65dd652d461a5b064e",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
@@ -317,6 +317,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
         cache_path="talos_data",  # match package name
+    ),
+    "toddlerbot": Repository(
+        url="https://github.com/hshi74/toddlerbot.git",
+        commit="067f9dc4f50143e36334877b9395b9c5c29ee30c",
+        cache_path="toddlerbot",
     ),
     "unitree_mujoco": Repository(
         url="https://github.com/unitreerobotics/unitree_mujoco.git",

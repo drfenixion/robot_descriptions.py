@@ -163,7 +163,6 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
 | `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
-| `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `z1_description`              | Z1                    | UNITREE Robotics         | URDF       | BSD-3-Clause |
 | `z1_mj_description`           | Z1                    | UNITREE Robotics         | MJCF       | BSD-3-Clause |
 
@@ -259,6 +258,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sigmaban_description`          | SigmaBan              | Rhoban                   | URDF       | MIT |
 | `talos_description`             | TALOS                 | PAL Robotics             | URDF       | Apache-2.0 |
 | `talos_mj_description`          | TALOS                 | PAL Robotics             | MJCF       | Apache-2.0 |
+| `toddlerbot_description`        | ToddlerBot            | Stanford University      | URDF       | MIT |
 | `valkyrie_description`          | Valkyrie              | NASA JSC Robotics        | URDF       | NASA-1.3 |
 
 ### Mobile manipulators
@@ -277,7 +277,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
-| `rby1_description`            | RBY1                  | Rainbow Robotics         | 24  | URDF       |
+| `tiago++_mj_description`      | TIAGo++               | PAL Robotics             | MJCF       | Apache-2.0 |
+| `rby1_description`            | RBY1                  | Rainbow Robotics         | URDF       | MIT |
 
 
 ### Quadrupeds
@@ -331,10 +332,10 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.20.0},
+  version = {1.21.0},
   year = {2025}
 }
 ```

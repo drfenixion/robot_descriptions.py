@@ -2,9 +2,8 @@
 # -*- coding: utf-8 -*-
 #
 # SPDX-License-Identifier: Apache-2.0
-# Copyright 2022 Stéphane Caron
 
-"""YAM URDF description."""
+"""PAL Tiago dual description."""
 
 from os import getenv as _getenv
 from os import path as _path
@@ -12,10 +11,10 @@ from os import path as _path
 from ._cache import clone_to_cache as _clone_to_cache
 
 REPOSITORY_PATH: str = _clone_to_cache(
-    "i2rt",
+    "mujoco_menagerie",
     commit=_getenv("ROBOT_DESCRIPTION_COMMIT", None),
 )
 
-PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "i2rt", "robot_models", "yam")
+PACKAGE_PATH: str = _path.join(REPOSITORY_PATH, "pal_tiago_dual")
 
-URDF_PATH: str = _path.join(PACKAGE_PATH, "yam.urdf")
+MJCF_PATH: str = _path.join(PACKAGE_PATH, "tiago_dual_position.xml")
