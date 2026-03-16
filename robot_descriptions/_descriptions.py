@@ -60,6 +60,12 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.MJCF, tags={"end_effector"}
     ),
     "adam_lite_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "aero_hand_open_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
+    "aero_hand_open_mj_description": Description(
+        Format.MJCF, tags={"end_effector"}
+    ),
     "aliengo_description": Description(Format.URDF, tags={"quadruped"}),
     "aliengo_mj_description": Description(Format.MJCF, tags={"quadruped"}),
     "allegro_hand_description": Description(
@@ -112,9 +118,14 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.URDF, tags={"mobile_manipulator"}
     ),
     "fanuc_m710ic_description": Description(Format.URDF, tags={"arm"}),
+    "fer_description": Description(Format.URDF, tags={"arm"}),
     "fetch_description": Description(Format.URDF, tags={"mobile_manipulator"}),
     "finger_edu_description": Description(Format.URDF, tags={"educational"}),
+    "fr3_description": Description(Format.URDF, tags={"arm"}),
     "fr3_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "fr3_v2_description": Description(Format.URDF, tags={"arm"}),
+    "fr3_v2_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "fr3_v2_1_description": Description(Format.URDF, tags={"arm"}),
     "g1_description": Description(Format.URDF, tags={"humanoid"}),
     "g1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "gen2_description": Description(Format.URDF, tags={"arm"}),
@@ -138,6 +149,13 @@ DESCRIPTIONS: Dict[str, Description] = {
     "iiwa7_description": Description(Format.URDF, tags={"arm"}),
     "iiwa14_description": Description(Format.URDF, tags={"arm"}),
     "iiwa14_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "j2n4s300_description": Description(Format.URDF, tags={"arm"}),
+    "j2n6s200_description": Description(Format.URDF, tags={"arm"}),
+    "j2n6s300_description": Description(Format.URDF, tags={"arm"}),
+    "j2n7s300_description": Description(Format.URDF, tags={"arm"}),
+    "j2s6s200_description": Description(Format.URDF, tags={"arm"}),
+    "j2s6s300_description": Description(Format.URDF, tags={"arm"}),
+    "j2s7s300_description": Description(Format.URDF, tags={"arm"}),
     "jaxon_description": Description(Format.URDF, tags={"humanoid"}),
     "jvrc_description": Description(Format.URDF, tags={"humanoid"}),
     "jvrc_mj_description": Description(Format.MJCF, tags={"humanoid"}),
@@ -160,6 +178,7 @@ DESCRIPTIONS: Dict[str, Description] = {
     "n1_mj_description": Description(Format.MJCF, tags={"humanoid"}),
     "nextage_description": Description(Format.URDF, tags={"dual_arm"}),
     "op3_mj_description": Description(Format.MJCF, tags={"humanoid"}),
+    "openarm_v1_mj_description": Description(Format.MJCF, tags={"dual_arm"}),
     "panda_description": Description(Format.URDF, tags={"arm"}),
     "panda_mj_description": Description(Format.MJCF, tags={"arm"}),
     "pepper_description": Description(
@@ -179,6 +198,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     ),
     "rhea_description": Description(Format.URDF, tags={"biped"}),
     "robotiq_2f85_description": Description(
+        Format.URDF, tags={"end_effector"}
+    ),
+    "robotiq_2f85_v4_description": Description(
         Format.URDF, tags={"end_effector"}
     ),
     "robotiq_2f85_mj_description": Description(
@@ -213,6 +235,9 @@ DESCRIPTIONS: Dict[str, Description] = {
     "stretch_description": Description(
         Format.URDF, tags={"mobile_manipulator"}
     ),
+    "stretch_se3_description": Description(
+        Format.URDF, tags={"mobile_manipulator"}
+    ),
     "stretch_mj_description": Description(
         Format.MJCF, tags={"mobile_manipulator"}
     ),
@@ -226,24 +251,52 @@ DESCRIPTIONS: Dict[str, Description] = {
         Format.MJCF, tags={"mobile_manipulator"}
     ),
     "toddlerbot_description": Description(Format.URDF, tags={"humanoid"}),
+    "toddlerbot_2xc_mj_description": Description(
+        Format.MJCF, tags={"humanoid"}
+    ),
+    "toddlerbot_2xm_mj_description": Description(
+        Format.MJCF, tags={"humanoid"}
+    ),
     "trifinger_edu_description": Description(
         Format.URDF, tags={"educational"}
     ),
     "upkie_description": Description(Format.URDF, tags={"biped", "wheeled"}),
     "ur10_description": Description(Format.URDF, tags={"arm"}),
+    "ur10_official_description": Description(Format.URDF, tags={"arm"}),
+    "ur10e_description": Description(Format.URDF, tags={"arm"}),
     "ur10e_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "ur12e_description": Description(Format.URDF, tags={"arm"}),
+    "ur15_description": Description(Format.URDF, tags={"arm"}),
+    "ur16e_description": Description(Format.URDF, tags={"arm"}),
+    "ur18_description": Description(Format.URDF, tags={"arm"}),
+    "ur20_description": Description(Format.URDF, tags={"arm"}),
+    "ur30_description": Description(Format.URDF, tags={"arm"}),
     "ur3_description": Description(Format.URDF, tags={"arm"}),
+    "ur3_official_description": Description(Format.URDF, tags={"arm"}),
+    "ur3e_description": Description(Format.URDF, tags={"arm"}),
     "ur5_description": Description(Format.URDF, tags={"arm"}),
+    "ur5_official_description": Description(Format.URDF, tags={"arm"}),
+    "ur5e_description": Description(Format.URDF, tags={"arm"}),
     "ur5e_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "ur7e_description": Description(Format.URDF, tags={"arm"}),
+    "ur8long_description": Description(Format.URDF, tags={"arm"}),
     "valkyrie_description": Description(Format.URDF, tags={"humanoid"}),
     "viper_mj_description": Description(Format.MJCF, tags={"arm"}),
     "widow_mj_description": Description(Format.MJCF, tags={"arm"}),
     "wl_p311d_description": Description(Format.URDF, tags={"quadruped"}),
     "wl_p311e_description": Description(Format.URDF, tags={"quadruped"}),
+    "xarm6_description": Description(Format.URDF, tags={"arm"}),
+    "xarm7_description": Description(Format.URDF, tags={"arm"}),
     "xarm7_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yam_description": Description(Format.URDF, tags={"arm"}),
     "yam_mj_description": Description(Format.MJCF, tags={"arm"}),
     "yumi_description": Description(Format.URDF, tags={"dual_arm"}),
     "z1_description": Description(Format.URDF, tags={"arm"}),
     "z1_mj_description": Description(Format.MJCF, tags={"arm"}),
+    "omy_3m_description": Description(Format.URDF, tags={"arm"}),
+    "omy_f3m_description": Description(Format.URDF, tags={"arm"}),
+    "omy_l100_description": Description(Format.URDF, tags={"arm"}),
+    "omx_f_description": Description(Format.URDF, tags={"arm"}),
+    "omx_l_description": Description(Format.URDF, tags={"arm"}),
+    "open_manipulator_x_description": Description(Format.URDF, tags={"arm"}),
 }

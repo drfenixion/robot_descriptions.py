@@ -4,6 +4,84 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Description: Robotiq 2F-85 v4 (URDF) (thanks to @nickswalker)
+
+## [1.23.0] - 2026-03-09
+
+### Added
+
+- Add support for xacro-based descriptions (thanks to @nickswalker)
+- Description: FER (URDF) (thanks to @nickswalker)
+- Description: Franka FR3 (URDF) (thanks to @nickswalker)
+- Description: Franka FR3 v2 (URDF) (thanks to @nickswalker)
+- Description: Franka FR3 v2.1 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n4s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n6s200 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n6s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2n7s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s6s200 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s6s300 (URDF) (thanks to @nickswalker)
+- Description: Kinova Jaco2 j2s7s300 (URDF) (thanks to @nickswalker)
+- Description: OMX-F (URDF) (thanks to @Woojin-Crive)
+- Description: OMX-L (URDF) (thanks to @Woojin-Crive)
+- Description: OMY-3M (URDF) (thanks to @Woojin-Crive)
+- Description: OMY-F3M (URDF) (thanks to @Woojin-Crive)
+- Description: OMY-L100 (URDF) (thanks to @Woojin-Crive)
+- Description: OpenArm v1 (MJCF) (thanks to @daipom)
+- Description: OpenMANIPULATOR-X (URDF) (thanks to @Woojin-Crive)
+- Description: Stretch SE3 (URDF) (thanks to @nickswalker)
+- Description: UR10 official (URDF) (thanks to @nickswalker)
+- Description: UR10e (URDF) (thanks to @nickswalker)
+- Description: UR12e (URDF) (thanks to @nickswalker)
+- Description: UR15 (URDF) (thanks to @nickswalker)
+- Description: UR16e (URDF) (thanks to @nickswalker)
+- Description: UR18 (URDF) (thanks to @nickswalker)
+- Description: UR20 (URDF) (thanks to @nickswalker)
+- Description: UR3 official (URDF) (thanks to @nickswalker)
+- Description: UR30 (URDF) (thanks to @nickswalker)
+- Description: UR3e (URDF) (thanks to @nickswalker)
+- Description: UR5 official (URDF) (thanks to @nickswalker)
+- Description: UR5e (URDF) (thanks to @nickswalker)
+- Description: UR7e (URDF) (thanks to @nickswalker)
+- Description: UR8 Long (URDF) (thanks to @nickswalker)
+- Description: xArm6 (URDF) (thanks to @nickswalker)
+- Description: xArm7 (URDF) (thanks to @nickswalker)
+- examples: Add uv script dependencies to all examples
+
+### Changed
+
+- Bump minimum Python version to 3.10
+- CICD: Update `.gitattributes` for `pixi.lock`
+- Description: UR10 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
+- Description: UR3 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
+- Description: UR5 (URDF) now warns that it is deprecated and will switch to the official model in v2 (thanks to @nickswalker)
+- cache: Optimize pinned-revision cloning by initializing the repository locally, shallow-fetching the requested revision (`depth=1`), and checking it out (thanks to @nickswalker)
+
+### Fixed
+
+- CICD: Update Python version to 3.10 (thanks to @daipom)
+- Description: Kinova Gen3 (URDF) now resolves from ros2_kortex xacro, instead of incorrect Jaco2 URDF (thanks to @nickswalker)
+
+## [1.22.0] - 2025-12-05
+
+### Added
+
+- Description: Aero Hand Open (MJCF)
+- Description: Aero Hand Open (URDF)
+- Description: Franka FR3 v2 (MJCF)
+- Description: ToddlerBot 2XC (MJCF)
+- Description: ToddlerBot 2XM (MJCF)
+
+### Changed
+
+- Update repository commit of MuJoCo Menagerie
+
+### Fixed
+
+- Update repository of YAM description
+
 ## [1.21.0] - 2025-09-03
 
 ### Added
@@ -16,6 +94,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
+- Bump minimum Python version to 3.8
 - CICD: Disable fail-fast when testing loaders
 
 ### Fixed
@@ -522,7 +601,9 @@ This initial release includes 33 robot descriptions:
 - Contributing instructions
 - This changelog
 
-[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.21.0...HEAD
+[unreleased]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.23.0...HEAD
+[1.23.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.22.0...v1.23.0
+[1.22.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.21.0...v1.22.0
 [1.21.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.20.0...v1.21.0
 [1.20.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.19.0...v1.20.0
 [1.19.0]: https://github.com/robot-descriptions/robot_descriptions.py/compare/v1.18.0...v1.19.0

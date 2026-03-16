@@ -31,6 +31,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="89407424edfc22faceaedcd7c3ea2b7947cbbb2c",
         cache_path="ability_hand_api",
     ),
+    "aero-hand-open": Repository(
+        url="https://github.com/TetherIA/aero-hand-open.git",
+        commit="ad7d4fc4078ceedfeefbf27aa5f058b622e18521",
+        cache_path="aero_hand_open",
+    ),
     "anymal_b_simple_description": Repository(
         url="https://github.com/ANYbotics/anymal_b_simple_description.git",
         commit="988b5df22b84761bdf08111b1c2ccc883793f456",
@@ -135,6 +140,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="d12af44559cd7e46f7afd513237f159f82f8402e",
         cache_path="fanuc_m710ic_description",
     ),
+    "franka_description": Repository(
+        url="https://github.com/frankarobotics/franka_description.git",
+        commit="1aa4fd30e6e274cbf5e986a5af8004df32bad284",
+        cache_path="franka_description",
+    ),
     "GingerURDF": Repository(
         url="https://github.com/Rayckey/GingerURDF.git",
         commit="6a1307cd0ee2b77c82f8839cdce3a2e2eed2bd8f",
@@ -151,7 +161,7 @@ REPOSITORIES: Dict[str, Repository] = {
         cache_path="halodi-robot-models",
     ),
     "i2rt": Repository(
-        url="https://github.com/i2rt-robotics/i2rt.git",
+        url="https://github.com/robot-descriptions/i2rt.git",
         commit="7809b5b17227162d265f922e2e10598c0e214322",
         cache_path="i2rt",
     ),
@@ -185,6 +195,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="cee556b0a438e6904634a90826d4e8d2e005cd1f",
         cache_path="kinova_mj_description",
     ),
+    "kinova-ros": Repository(
+        url="https://github.com/Kinovarobotics/kinova-ros.git",
+        commit="924781d3dfe241b2b94b3c72a804b80d3658cf02",
+        cache_path="kinova-ros",
+    ),
     "limxdynamics_robot-description": Repository(
         url="https://github.com/limxdynamics/robot-description.git",
         commit="a097533372a08298d45af391cbdfc2fd2dc3da6f",
@@ -205,7 +220,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "mujoco_menagerie": Repository(
         url="https://github.com/deepmind/mujoco_menagerie.git",
-        commit="c1503a62496b64222c64ff65dd652d461a5b064e",
+        commit="bf756430b615819654b640f321c71ba5c3ebeef8",
         cache_path="mujoco_menagerie",
     ),
     "nao_robot": Repository(
@@ -222,6 +237,11 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/Rhoban/onshape-to-robot-examples.git",
         commit="911abb069c781e4c717c10643b975f55f7a64fe8",
         cache_path="onshape-to-robot-examples",
+    ),
+    "openarm_mujoco": Repository(
+        url="https://github.com/enactic/openarm_mujoco.git",
+        commit="cd30dd4c0a97832d1c063bf759514ed18fbe04a5",
+        cache_path="openarm_mujoco",
     ),
     "pepper_description": Repository(
         url="https://github.com/jrl-umi3218/pepper_description.git",
@@ -273,6 +293,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="a65190bdbb0666609fe7e8c3bb17341e09e81625",
         cache_path="robotiq_arg85_description",
     ),
+    "robotiq_2f_85": Repository(
+        url="https://github.com/nickswalker/robotiq-2f-85.git",
+        commit="319f7b94587c97f09e732a7b2ed7babbe0250b9e",
+        cache_path="robotiq-2f-85",
+    ),
     "romeo_robot": Repository(
         url="https://github.com/ros-aldebaran/romeo_robot.git",
         commit="0.1.5",
@@ -280,7 +305,7 @@ REPOSITORIES: Dict[str, Repository] = {
     ),
     "ros2_kortex": Repository(
         url="https://github.com/Kinovarobotics/ros2_kortex.git",
-        commit="fb633aacf9c1c85d61a96c1099b5afa3d533e5a3",
+        commit="8bf203423911446de28a2248ec87380b7eea2f90",
         cache_path="ros2_kortex",
     ),
     "rtmros_nextage": Repository(
@@ -313,6 +338,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="4b838429fe4c5d9f2937efe698444bd68968f376",
         cache_path="stretch_description",
     ),
+    "stretch_urdf": Repository(
+        url="https://github.com/hello-robot/stretch_urdf.git",
+        commit="1b7cbbce808c25465017ce0a53a4173fcf97b11c",
+        cache_path="stretch_urdf",
+    ),
     "talos-data": Repository(
         url="https://github.com/stack-of-tasks/talos-data.git",
         commit="77169405d6a48a5d3f3f75eb014209f375ff23b6",  # v2.0.0
@@ -333,6 +363,11 @@ REPOSITORIES: Dict[str, Repository] = {
         commit="267182b8521c8d6a631bab1fe63836873237a525",
         cache_path="unitree_ros",
     ),
+    "Universal_Robots_ROS2_Description": Repository(
+        url="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git",
+        commit="22f055da2fa7e2158254426107d1f257fd56aebb",
+        cache_path="ur_description",
+    ),
     "upkie_description": Repository(
         url="https://github.com/upkie/upkie_description.git",
         commit="19a91ce69cab6742c613cab104986e3f8a18d6a5",
@@ -352,5 +387,15 @@ REPOSITORIES: Dict[str, Repository] = {
         url="https://github.com/FFTAI/Wiki-GRx-Models.git",
         commit="f8e683f00d1d99deb882deb9dfce6030095b466a",  # FourierN1 branch
         cache_path="Wiki-GRx-Models-FourierN1",
+    ),
+    "open_manipulator": Repository(
+        url="https://github.com/ROBOTIS-GIT/open_manipulator.git",
+        commit="bc555a9c41ebd7493dc945ddabc43fc649681b62",
+        cache_path="open_manipulator",
+    ),
+    "xarm_ros2": Repository(
+        url="https://github.com/xArm-Developer/xarm_ros2.git",
+        commit="5bb832f72ca665f1236a9d8ed1c3a82f308db489",
+        cache_path="xarm_ros2",
     ),
 }

@@ -48,15 +48,16 @@ Loaders are implemented for the following robotics software:
 
 Loading will automatically download the robot description if needed, and cache it to a local directory.
 
-### Show a description
+### Command line
 
-You can display a robot description directly from the command line:
+You can use [uv](https://docs.astral.sh/uv/) to manipulate robot descriptions directly from the command line:
 
 ```console
-python -m robot_descriptions show_in_meshcat go2_description
+uvx robot_descriptions pull iiwa14_description          # download the robot description to cache
+uvx robot_descriptions show_in_meshcat go2_description  # display the robot description
 ```
 
-A `robot_descriptions` alias for `python -m robot_descriptions` is also available.
+Try `uvx robot_descriptions -h` to see the list of available commands. Alternatively, once the package is installed from PyPI or conda-forge, you can call the `robot_descriptions` alias directly from the command line, or replace `uvx` by `uv run`, or `python -m robot_descriptions` (old school).
 
 ### Import as submodule
 
@@ -90,6 +91,10 @@ The import will automatically download the robot description if you don't have i
 </dl>
 
 Some robot descriptions include additional fields. For instance, the `iiwa14_description` exports `URDF_PATH_POLYTOPE_COLLISION` with more detailed collision meshes.
+
+Descriptions can also define `XACRO_PATH` (and optional `XACRO_ARGS`) instead
+of a static `URDF_PATH`. In that case, `robot_descriptions` renders the Xacro
+to a cached URDF transparently when loading the description.
 
 ## Examples
 
@@ -134,15 +139,33 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `arx_l5_mj_description`       | L5                    | ARX                      | MJCF       | BSD-3-Clause |
 | `edo_description`             | e.DO                  | Comau                    | URDF       | [BSD-3-Clause](https://github.com/ianathompson/eDO_description/blob/17b3f92f834746106d6a4befaab8eeab3ac248e6/LICENSE) |
 | `fanuc_m710ic_description`    | M-710iC               | Fanuc                    | URDF       | BSD-3-Clause |
+| `fer_description`             | FER                   | Franka Robotics          | URDF       | Apache-2.0   |
+| `fr3_description`             | FR3                   | Franka Robotics          | URDF       | Apache-2.0   |
 | `fr3_mj_description`          | FR3                   | Franka Robotics          | MJCF       | Apache-2.0   |
+| `fr3_v2_description`          | FR3 v2                | Franka Robotics          | URDF       | Apache-2.0   |
+| `fr3_v2_mj_description`       | FR3 v2                | Franka Robotics          | MJCF       | Apache-2.0   |
+| `fr3v2_1_description`         | FR3 v2.1              | Franka Robotics          | URDF       | Apache-2.0   |
 | `gen2_description`            | Gen2                  | Kinova                   | URDF       | BSD-3-Clause |
-| `gen3_description`            | Gen3                  | Kinova                   | URDF       | MIT          |
+| `gen3_description`            | Gen3                  | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_lite_description`       | Gen3 Lite             | Kinova                   | URDF       | BSD-3-Clause |
 | `gen3_mj_description`         | Gen3                  | Kinova                   | MJCF       | BSD-2-Clause |
 | `iiwa14_description`          | iiwa 14               | KUKA                     | URDF       | BSD-3-Clause |
 | `iiwa14_mj_description`       | iiwa 14               | KUKA                     | MJCF       | BSD-3-Clause |
 | `iiwa7_description`           | iiwa 7                | KUKA                     | URDF       | MIT          |
+| `j2n4s300_description`        | Jaco2 j2n4s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2n6s200_description`        | Jaco2 j2n6s200        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2n6s300_description`        | Jaco2 j2n6s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2n7s300_description`        | Jaco2 j2n7s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2s6s200_description`        | Jaco2 j2s6s200        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2s6s300_description`        | Jaco2 j2s6s300        | Kinova                   | URDF       | BSD-3-Clause |
+| `j2s7s300_description`        | Jaco2 j2s7s300        | Kinova                   | URDF       | BSD-3-Clause |
 | `low_cost_robot_arm_mj_description` | Low-cost robot arm | Alexander Koch | MJCF | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/ef4d04fbb7451d30b39c2aff7e49df737bb46815/low_cost_robot_arm/LICENSE) |
+| `omx_f_description`           | OMX-F                 | ROBOTIS                  | URDF       | Apache-2.0   |
+| `omx_l_description`           | OMX-L                 | ROBOTIS                  | URDF       | Apache-2.0   |
+| `omy_3m_description`          | OMY-3M                | ROBOTIS                  | URDF       | Apache-2.0   |
+| `omy_f3m_description`         | OMY-F3M               | ROBOTIS                  | URDF       | Apache-2.0   |
+| `omy_l100_description`        | OMY-L100              | ROBOTIS                  | URDF       | Apache-2.0   |
+| `open_manipulator_x_description` | OpenMANIPULATOR-X  | ROBOTIS                  | URDF       | Apache-2.0   |
 | `panda_description`           | Panda                 | Franka Robotics          | URDF       | Apache-2.0   |
 | `panda_mj_description`        | Panda                 | Franka Robotics          | MJCF       | Apache-2.0   |
 | `piper_description`           | PiPER                 | AgileX                   | URDF       | MIT          |
@@ -154,12 +177,28 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `so_arm101_description`       | SO-ARM101             | The Robot Studio         | URDF       | Apache-2.0   |
 | `so_arm101_mj_description`    | SO-ARM101             | The Robot Studio         | MJCF       | Apache-2.0   |
 | `ur10_description`            | UR10                  | Universal Robots         | URDF       | Apache-2.0   |
+| `ur10_official_description`   | UR10 (official)       | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur10e_description`           | UR10e                 | Universal Robots         | URDF       | BSD-3-Clause |
 | `ur10e_mj_description`        | UR10e                 | Universal Robots         | MJCF       | BSD-3-Clause |
+| `ur12e_description`           | UR12e                 | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur15_description`            | UR15                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur16e_description`           | UR16e                 | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur18_description`            | UR18                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur20_description`            | UR20                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur30_description`            | UR30                  | Universal Robots         | URDF       | BSD-3-Clause |
 | `ur3_description`             | UR3                   | Universal Robots         | URDF       | Apache-2.0   |
+| `ur3_official_description`    | UR3 (official)        | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur3e_description`            | UR3e                  | Universal Robots         | URDF       | BSD-3-Clause |
 | `ur5_description`             | UR5                   | Universal Robots         | URDF       | Apache-2.0   |
+| `ur5_official_description`    | UR5 (official)        | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur5e_description`            | UR5e                  | Universal Robots         | URDF       | BSD-3-Clause |
 | `ur5e_mj_description`         | UR5e                  | Universal Robots         | MJCF       | BSD-3-Clause |
+| `ur7e_description`            | UR7e                  | Universal Robots         | URDF       | BSD-3-Clause |
+| `ur8long_description`         | UR8 Long              | Universal Robots         | URDF       | BSD-3-Clause |
 | `viper_mj_description`        | ViperX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
 | `widow_mj_description`        | WidowX                | Trossen Robotics         | MJCF       | BSD-3-Clause |
+| `xarm6_description`           | xArm6                 | UFACTORY                 | URDF       | BSD-3-Clause |
+| `xarm7_description`           | xArm7                 | UFACTORY                 | URDF       | BSD-3-Clause |
 | `xarm7_mj_description`        | xArm7                 | UFACTORY                 | MJCF       | BSD-3-Clause |
 | `yam_description`             | YAM                   | I2RT Robotics            | URDF       | MIT          |
 | `yam_mj_description`          | YAM                   | I2RT Robotics            | MJCF       | MIT          |
@@ -184,6 +223,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `aloha_mj_description`        | Aloha 2               | Trossen Robotics         | 14  | MJCF       |
 | `baxter_description`          | Baxter                | Rethink Robotics         | 15  | URDF       |
 | `nextage_description`         | NEXTAGE               | Kawada Robotics          | 15  | URDF       |
+| `openarm_v1_mj_description`   | OpenArm               | Enactic                  | 16  | MJCF       |
 | `poppy_torso_description`     | Poppy Torso           | Poppy Project            | 13  | URDF       |
 | `yumi_description`            | YuMi                  | ABB                      | 16  | URDF       |
 
@@ -213,12 +253,15 @@ The DOF column denotes the number of actuated degrees of freedom.
 |----------------------------------|-----------------------|----------------------------|------------|---------|
 | `ability_hand_description`       | Ability Hand          | PSYONIC, Inc.              | URDF       | [MIT](https://github.com/psyonicinc/ability-hand-api/blob/89407424edfc22faceaedcd7c3ea2b7947cbbb2c/LICENSE)     |
 | `ability_hand_mj_description`    | Ability Hand          | PSYONIC, Inc.              | MJCF       | [MIT](https://github.com/psyonicinc/ability-hand-api/blob/89407424edfc22faceaedcd7c3ea2b7947cbbb2c/LICENSE)     |
+| `aero_hand_open_description`     | Aero Hand Open        | TetherIA                   | URDF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/pull/213/commits/6d88dc56029eec7f92e530e1c16283a4b53166e8) |
+| `aero_hand_open_mj_description`  | Aero Hand Open        | TetherIA                   | MJCF       | [Apache-2.0](https://github.com/google-deepmind/mujoco_menagerie/blob/bf756430b615819654b640f321c71ba5c3ebeef8/tetheria_aero_hand_open/LICENSE) |
 | `allegro_hand_description`       | Allegro Hand          | Wonik Robotics             | URDF       | [BSD](https://github.com/RobotLocomotion/models/blob/5c027ea961473cb558da30e1a749272a8a9fa3eb/allegro_hand_description/LICENSE.TXT)     |
 | `allegro_hand_mj_description`    | Allegro Hand          | Wonik Robotics             | MJCF       | [BSD-2-Clause](https://github.com/google-deepmind/mujoco_menagerie/blob/main/wonik_allegro/LICENSE) |
 | `barrett_hand_description`       | BarrettHand           | Barrett Technology         | URDF       | [BSD](https://github.com/jhu-lcsr-attic/bhand_model/blob/937f4186d6458bd682a7dae825fb6f4efe56ec69/manifest.xml) |
 | `leap_hand_v1_description`       | LEAP Hand v1          | Carnegie Mellon University | URDF       | MIT |
 | `leap_hand_mj_description`       | LEAP Hand             | Carnegie Mellon University | MJCF       | MIT |
 | `robotiq_2f85_description`       | Robotiq 2F-85         | Robotiq                    | URDF       | BSD-2-Clause |
+| `robotiq_2f85_v4_description`    | Robotiq 2F-85 v4      | Robotiq                    | URDF       | BSD-2-Clause |
 | `robotiq_2f85_mj_description`    | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
 | `robotiq_2f85_v4_mj_description` | Robotiq 2F-85         | Robotiq                    | MJCF       | BSD-2-Clause |
 | `shadow_dexee_mj_description`    | Shadow DEX-EE         | The Shadow Robot Company   | MJCF       | Apache-2.0 |
@@ -259,6 +302,8 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `talos_description`             | TALOS                 | PAL Robotics             | URDF       | Apache-2.0 |
 | `talos_mj_description`          | TALOS                 | PAL Robotics             | MJCF       | Apache-2.0 |
 | `toddlerbot_description`        | ToddlerBot            | Stanford University      | URDF       | MIT |
+| `toddlerbot_2xc_mj_description` | ToddlerBot 2XC        | Stanford University      | URDF       | [MIT](https://github.com/google-deepmind/mujoco_menagerie/blob/bf756430b615819654b640f321c71ba5c3ebeef8/toddlerbot_2xc/LICENSE) |
+| `toddlerbot_2xm_mj_description` | ToddlerBot 2XM        | Stanford University      | URDF       | [MIT](https://github.com/google-deepmind/mujoco_menagerie/blob/bf756430b615819654b640f321c71ba5c3ebeef8/toddlerbot_2xm/LICENSE) |
 | `valkyrie_description`          | Valkyrie              | NASA JSC Robotics        | URDF       | NASA-1.3 |
 
 ### Mobile manipulators
@@ -274,6 +319,7 @@ The DOF column denotes the number of actuated degrees of freedom.
 | `rby1_description`            | RBY1                  | Rainbow Robotics         | URDF       | [MIT](https://github.com/uynitsuj/rby1_description/blob/e4c07203aa0a0d1b6b3b39da105cb00a77e2bc72/LICENSE) |
 | `reachy_description`          | Reachy                | Pollen Robotics          | URDF       | Apache-2.0 |
 | `stretch_description`         | Stretch RE1           | Hello Robot              | URDF       | CC-BY-SA-4.0 ✖️  |
+| `stretch_se3_description`     | Stretch SE3           | Hello Robot              | URDF       | Clear BSD |
 | `sretch_mj_description`       | Stretch 2             | Hello Robot              | MJCF       | Clear BSD |
 | `sretch_3_mj_description`     | Stretch 3             | Hello Robot              | MJCF       | Apache-2.0 |
 | `tiago_description`           | TIAGo                 | PAL Robotics             | URDF       | Apache-2.0 |
@@ -332,10 +378,10 @@ If you use this project in your works, please cite as follows:
 ```bibtex
 @software{robot_descriptions_py,
   title = {{robot_descriptions.py: Robot descriptions in Python}},
-  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong},
+  author = {Caron, Stéphane and Romualdi, Giulio and Kozlov, Lev and Ordoñez Apraez, Daniel Felipe and Tadashi Kussaba, Hugo and Bang, Seung Hyeon and Zakka, Kevin and Schramm, Fabian and Uru\c{c}, Jafar and Traversaro, Silvio and Zamora, Jonathan and Castro, Sebastian and Tao, Haixuan Xavier and Yu, Justin and Jallet, Wilson and Zhang, Yutong and Walker, Nick},
   license = {Apache-2.0},
   url = {https://github.com/robot-descriptions/robot_descriptions.py},
-  version = {1.21.0},
+  version = {1.23.0},
   year = {2025}
 }
 ```
